@@ -1,0 +1,34 @@
+package org.dimigo.oop;
+
+public class BookTest {
+    public static void main(String[] args) {
+        Book book;
+        book = new Book();
+
+        Book book1 =new Book();
+
+        System.out.println(book);
+        System.out.println(book1);
+
+        System.out.println(book.getTitle());
+        System.out.println(book.getAuthor());
+        System.out.println(book.getPage());
+
+        book.setTitle("수학의 바이블");
+        book.setAuthor("민경도");
+        book.setPage(200);
+
+        System.out.println(book.getTitle());
+        System.out.println(book.getAuthor());
+        System.out.println(book.getPage());
+
+        Book book2 = new Book("언어의 정원","신카이마코토",100);
+        System.out.println(book2.getTitle());
+
+        Book book3 = new Book("언어의 정원","신카이마코토");
+        System.out.println(book3.getPage());
+
+        Book book4 = new Book("언어의 정원");
+        System.out.println(book4.getTitle());
+    }
+}
